@@ -57,8 +57,8 @@ int main() {
         printf("I will work with matrix(1)/array(2)/exit(0): ");
     } while (!(result = scanf("%d", &input)) || input < 0 || input > 2);
 
-    if (input == 1) LoadRun("matrixLib.dll", B, 8 * 5);
-    else if (input == 2) LoadRun("arrayLib.dll", A, 35);
+    if (input == 1) LoadRun("matrixLib.so", B, 8 * 5);
+    else if (input == 2) LoadRun("arrayLib.so", A, 35);
     getch();
-    return 0;	// Завершаем программу с кодом успеха 0
+    return 0;	//Программа завершилась с кодом 0
 }
